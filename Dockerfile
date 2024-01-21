@@ -13,4 +13,4 @@ COPY app.py app.py
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["python3", "-m", "flask", "run"]
+ENTRYPOINT ["python3", "app.py"]

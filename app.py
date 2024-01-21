@@ -65,6 +65,7 @@ class FeedbackResource(Resource):
 api.add_resource(FeedbackResource, '/feedback')
 
 if __name__ == "__main__":
+    print("starting server")
     with app.app_context():
         db.create_all()
     app.run(use_reloader=True, host="0.0.0.0")

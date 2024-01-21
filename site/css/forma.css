@@ -177,3 +177,8 @@ button {
     border-color: red;
     border-width: 1px;
 }
+
+#feedback_form button:hover {
+    background: #e6e6e6;
+    cursor: pointer;
+}
