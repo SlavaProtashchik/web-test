@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+	<title>Обратная связь</title>
+	
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="forma.css" media="all">
+		
+	
+</head>
+   <body>
+
+  <div class="form-wrap">
+        <div class="profile">
+        <img src="img/j.png ">
+       
+        <h1>Обратная связь</h1>
+        </div>
+     <form method="post" action="Javascript:(() => alert('Отправлено!'))();
+           window.location.replace('главная страница.html')">
+    <div>
+      <label for="name">Имя</label>
+      <input type="text" name="name" required>
+    </div>
+    <div>
+      <label for="country">Страна</label>
+      <select name="country">
+        <option>Выберите страну проживания</option>
+        <option value="Россия">Россия</option> 
+        <option value="Украина">Украина</option> 
+        <option value="Беларусь">Беларусь</option> 
+      </select> 
+      <div class="select-arrow"></div> 
+    </div> 
+    <div>
+      <label for="text">Сообщение</label>
+      <textarea type="text" name="text" rows="5" cols="100" required></textarea>
+    </div>
+    <button type="submit">Отправить</button> 
+    </form> 
+ </div>
+       </body>
+</html>

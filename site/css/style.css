@@ -1,0 +1,194 @@
+body {
+    background: #efefef url(img/tumblr_pt1yc6orMU1rsezm9o1_1280.jpg);
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed; /* Фон страницы фиксируется */
+    background-size: 100%;
+    font: 16px/24px arial,Tahoma,sans-serif;
+    color: #272729; /*текст */
+}
+
+
+a {
+    text-decoration: none; /* без подчеркивания*/
+}
+
+
+body {
+    background-color: #111;
+}
+
+.title {
+    font-family: "Montserrat";
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    letter-spacing: 1px;
+}
+
+h1 {
+    background-image: url(img/gi.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 120px;
+    line-height: .75;
+    margin: 10px 0;
+}
+
+
+
+
+/*Главное меню*/
+
+.menu ul {
+    margin: 20;
+    padding: o;
+    list-style: none;
+    text-align: center;
+}
+    
+.menu ul li {
+        display: inline-block;
+        margin: 5px 100px;
+}
+       
+.menu ul li a {
+            color: #111;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 3px #0b4455;
+
+}
+            
+            .menu ul li a:hover {
+                color: #a3e1f3;
+ }
+
+
+
+/*Контент сайта*/
+
+
+.fon {
+    background: rgba(255, 255, 255, 0.4);   /*фон блока*/
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 40px;
+}
+    
+.fon hr.line {                      /* линия*/
+        border: none;
+        border-bottom: 1px dashed #ccc;
+        height: 0;
+        margin: 40px 0;   
+
+ }
+
+
+.block1 {
+    
+    width: 37%;
+    float: left;
+    margin-right: 13%;
+}
+
+
+
+
+.anons {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.anons:hover {
+        background: #e0eff4;
+        border: 1px solid #bfd5dd;
+}
+       
+
+.anons:hover img {
+            transform: scale(1.05);
+            transition: transform 0.5s;
+}
+
+ .anons h3 {
+        font-size: 20px;
+        font-weight: normal;
+        margin: 1px 0 10px;
+        padding: 0;
+        color: #01617d;
+        line-height: 20px;
+}
+
+
+
+
+
+/*Подвал*/
+.footer {
+    height: 150px;
+    background-color: #00000047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+.clear {
+    clear: both;
+}
+.foot {
+    margin-left: 50px;
+    color: #ffffff;
+	font-size:23pt;
+}
+
+
+/*Адаптивный дизайн*/
+@media screen and (max-width: 1000px) {
+    .mid {
+        width: 95%;
+    }
+
+    .mid li {
+            font-size: 35px;
+    }
+
+    .afisha h3 {
+        font-size: 22px;
+    }
+
+    .block1 {
+        width: 100%;
+    }
+
+    .anons img, div.rek img {
+        width: 100%;
+    }
+
+    .anons h3 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        text-align: center;
+        background-position: center -200px;
+    }
+
+
+    .topmenu, div.afisha img, div.block, div.block:nth-of-type(even) {
+        float: none;
+    }
+    
+
+
+}

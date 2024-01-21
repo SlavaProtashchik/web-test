@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - ./src:/home/app
+    ports:
+      - "5023:5000"

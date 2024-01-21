@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    background: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.form-wrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 560px;
+    background: #2a272d08;
+    border-radius: 10px;
+}
+
+.profile {
+    width: 250px;
+    float: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.form-wrap * {
+    transition: .1s linear
+}
+
+form {
+    background: #ffffff7c;
+    float: bottom;
+    width: calc(100% - 250px);
+    padding: 30px;
+    border-radius: 10px;
+    color: #7b7b7b;
+}
+
+    .form-wrap:after, form div:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    form div {
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+}
+
+label, span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px 15px;
+    border-width: 0;
+    background: #e6e6e6;
+    outline: none;
+    margin: 0;
+}
+
+    input[type="text"]:focus {
+        box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+    }
+
+form textarea {
+    max-width: 100%;
+}
+
+form div {
+    width: 100%;
+}
+
+.male:before {
+    content: "\f222";
+    font-family: FontAwesome;
+    font-weight: bold;
+}
+
+.female:before {
+    content: "\f221";
+    font-family: FontAwesome;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    background: #e6e6e6;
+    color: #7b7b7b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+    select::-ms-expand {
+        display: none;
+    }
+
+.select-arrow {
+    position: absolute;
+    top: 38px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+button {
+    padding: 10px 0;
+    border-width: 0;
+    display: block;
+    width: 120px;
+    margin: 25px auto 0;
+    background: #2a272d08;
+    color: black;
+    font-size: 14px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+    body {
+        display: block
+    }
+
+    .form-wrap {
+        background: #f7f7f752;
+        display: flex;
+        margin: 20px auto;
+        max-width: 650px;
+        width: 70%
+    }
+
+    .profile, form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: none;
+        width: 100%
+    }
+
+    form {
+        border-radius: 0 0 20px 20px
+    }
+}

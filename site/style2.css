@@ -1,0 +1,103 @@
+﻿body {
+    background: #efefef url(img/tumblr_pt1yc6orMU1rsezm9o1_1280.jpg);
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed; 
+    background-size: 100%;
+    font: 16px/24px arial,Tahoma,sans-serif;
+    color: #272729; 
+}
+
+
+a {
+    text-decoration: none; 
+} 
+
+
+
+	 
+	
+#forma{ text-shadow: 2px ;
+        display: none;
+}
+	 
+	 /*Главное меню*/
+
+.menu ul{margin: 20;padding: o;list-style: none; text-align: center;}
+.menu ul li{display: inline-block; margin: 5px 100px;}
+    .menu ul li a {
+		width:;
+        color: #000;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 3px #0b4455;
+        font-size:20px;
+    }
+.menu ul li a:hover{color: #a3e1f3;}
+	 
+	 
+	 
+	 /*Контент сайта*/
+.fon{background:  rgba(255, 255, 255, 0.6);  border: 1px solid #ccc; border-top: none; padding: 40px;} 
+
+
+.block img{margin-right:1%; align-self: center; }
+.anons2{background:  rgba(255, 255, 255, 0.8);  border: 1px solid #ccc;   border-radius: 3px;padding: 20px; }
+
+
+.anons h3{font-size: 15px; font-weight: normal; color: #01617d;} 
+
+.anons2 h3{font-size: 20px; font-weight: normal; margin: 1px 0 10px;padding: 0; color: #DB7093;
+	line-height: 20px;}
+
+ .form { 
+  width: 450px;
+  height: 550px;
+  background: #fff;
+  border-radius: 70px;
+}
+	 
+/*Подвал*/
+.footer {
+    height: 150px;
+    background-color: #00000047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot {
+    margin-left: 50px;
+    color: #ffffff;
+}
+
+
+	 
+	 
+	/*Адаптивный дизайн*/
+
+@media screen and 
+(min-width: 640px){
+.mid{width: 100%;}
+.mid li {font-size:20px;}
+.block {flex-direction:row;}
+.block img{width: 23%;}
+
+}
+
+@media screen and 
+(max-width: 999px){
+.block {flex-direction:column;}
+.block img{width: 100%;}
+.calc img{width: 30%;}
+.calc2 {width:;font-size: 28px;}
+  
+}
+
+
+
+
+	 
+	  
+	 
+	 
+	 
