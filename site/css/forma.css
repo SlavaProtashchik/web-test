@@ -162,3 +162,18 @@ button {
         border-radius: 0 0 20px 20px
     }
 }
+
+#feedback_form .invalid {
+    color: red;
+}
+
+#feedback_form .success {
+    font-weight: bold;
+    text-align: center;
+}
+
+#feedback_form .invalid input,
+#feedback_form .invalid textarea {
+    border-color: red;
+    border-width: 1px;
+}

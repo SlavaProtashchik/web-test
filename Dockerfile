@@ -1,15 +1,16 @@
 FROM python:3.11-alpine
 
-ENV HOME_DIR=/home/app
+ENV HOME_DIR=/home/app \
+    FLASK_APP=/home/app/app.py \
+    FLASK_ENV=development \
+    FLASK_RUN_HOST=0.0.0.0 \
+    FLASK_DEBUG=1
 
-WORKDIR $HOME_DIR
+WORKDIR /home/app
 
 COPY requirements.txt requirements.txt
-COPY src/ $HOME_DIR/
+COPY app.py app.py
 
 RUN pip install -r requirements.txt
 
-ENV FLASK_APP=$HOME_DIR/app.py \
-    FLASK_ENV=development
-
-ENTRYPOINT ["python3", "-m", "flask", "run", "--host=0.0.0.0", "--port=5000"]
+ENTRYPOINT ["python3", "-m", "flask", "run"]

@@ -5,6 +5,6 @@ services:
     build:
       context: .
     volumes:
-      - ./src:/home/app
+      - .:/home/app
     ports:
       - "5023:5000"
